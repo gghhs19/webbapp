@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 WIN Casino - Mines</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-background"></div>
+    
+    <!-- Надпись в левом верхнем углу -->
+    <div class="corner-logo">1 WIN CASINO</div>
+    
+    <main class="game-container">
+        <div class="game-grid" id="gameGrid"></div>
+        <div class="controls">
+            <div class="trap-control">
+                <span class="arrow" id="decreaseTraps">←</span>
+                <span class="trap-count">Ловушек: <span id="trapsCount">1</span></span>
+                <span class="arrow" id="increaseTraps">→</span>
+            </div>
+            <div class="trap-options">
+                <div class="trap-option active" data-traps="1">1</div>
+                <div class="trap-option" data-traps="3">3</div>
+                <div class="trap-option" data-traps="5">5</div>
+                <div class="trap-option" data-traps="7">7</div>
+            </div>
+        </div>
+        <button class="predict-btn" id="predictBtn">
+            <span>Получить прогноз</span>
+            <div class="btn-shine"></div>
+        </button>
+    </main>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
